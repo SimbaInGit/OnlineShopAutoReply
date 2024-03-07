@@ -5,8 +5,7 @@ exports = async function(changeEvent) {
     // Define the OpenAI API url and key.
     const url = 'https://api.openai.com/v1/embeddings';
     // Use the name you gave the value of your API key in the “Values” utility inside of App Services
-    //const openai_key = context.values.get("openAIKey");
-    const openai_key = "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";
+    const openai_key = context.values.get("openAIKey");
 
     try {
         console.log(`Processing document with id: ${JSON.stringify(doc)}`);
